@@ -3,7 +3,7 @@ import {
   SET_TOPSTORY_LIST
 } from "./constants";
 
-export function getDogList(payload) {
+export function getStoryList(payload) {
   return {
     type: GET_TOPSTORY_LIST,
     payload

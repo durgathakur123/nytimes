@@ -1,7 +1,7 @@
 import { SET_TOPSTORY_LIST } from "./constants";
 
 const initialState = {
-  doglist: {}
+  storylist: {}
 };
 
 const reducer = (state = initialState, action) => {
@@ -9,7 +9,7 @@ const reducer = (state = initialState, action) => {
     case SET_TOPSTORY_LIST:
       return {
         ...state,
-        doglist: action.payload
+        storylist: action.payload
       };
   }
   return state;

@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import Login from "./components/Login/Login";
 import Register from "./components/Login/Register";
-import DogList from "./containers/DogList/DogList";
+import Listing from "./containers/Listing/Listing";
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,7 +17,7 @@ function App() {
 
       <Router>
         <Routes>
-            <Route exact path="/" element={<DogList />}/>
+            <Route exact path="/" element={<Listing />}/>
             <Route exact path="/Login" element={<Login />}/>
             <Route path="/register" element={<Register />}/>
         </Routes>

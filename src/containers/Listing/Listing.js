@@ -4,9 +4,9 @@ import List from '../../components/List'
 import Header  from '../../components/Header';
 import Banner  from '../../components/Banner';
 import Footer  from '../../components/Footer';
-import { getDogList } from "../../store/action";
+import { getStoryList } from "../../store/action";
 
-function DogList(props){
+function StoryList(props){
     useEffect(()=>{
         props.getList("world");
     },[])
@@ -20,8 +20,8 @@ function DogList(props){
           <Banner />
           
           {/* **** LIST COMPONENT **** */}
-          {props && props.doglist && 
-            <List data={props.doglist} dataCategory={props.getList}/>
+          {props && props.storylist && 
+            <List data={props.storylist} dataCategory={props.getList}/>
           }
 
           {/* **** FOOTER COMPONENT **** */}
@@ -32,17 +32,17 @@ function DogList(props){
 
 const mapStateToProps = state => {
     return {
-        doglist: state.doglist
+        storylist: state.storylist
     };
   };
   
   const mapDispatchToProps = dispatch => {
     return {
-      getList: (data) => dispatch(getDogList(data))
+      getList: (data) => dispatch(getStoryList(data))
     };
   };
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(DogList);
+)(StoryList);
