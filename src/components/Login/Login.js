@@ -15,11 +15,11 @@ class Login extends Component {
                         <label>Password</label>
                         <input type="password" className="form-control" required/>
                     </div>
-                    <p className="forgot-password mb-1">
-                    Not Register?<a href="#"> Click Here</a>
+                    <p className="forgot-password mb-1">Not Register?
+                        <a href="#"> Click Here</a>
                     </p>
                     <div className="right">
-                    <button type="submit" className="btn btn-primary btn-md">Log in</button>
+                        <button type="submit" className="btn btn-primary btn-md">Log in</button>
                     </div>
                 </form>
             </div>

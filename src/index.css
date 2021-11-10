@@ -223,7 +223,7 @@ footer {
 }
 
 .categoryBtn button {
-  border: 2px solid #444;
+  border: 1px solid #444;
 }
 .categoryBtn button.active {
   background: #444;

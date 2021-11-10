@@ -6,42 +6,35 @@ import Banner  from '../../components/Banner';
 import Footer  from '../../components/Footer';
 import { getStoryList, setItem } from "../../store/action";
 
-function StoryList(props){
+function StoryList(props) {
     useEffect(()=>{
         props.getList("world");
     },[])
     
     return(
         <>
-          {/* **** HEADER COMPONENT **** */}
-          <Header />
-
-          {/* **** BANNER COMPONENT **** */}
-          <Banner />
-          
-          {/* **** LIST COMPONENT **** */}
+          <Header /> {/* *** HEADER COMPONENT *** */}
+          <Banner /> {/* *** BANNER COMPONENT *** */}
           {props && props.storylist && 
             <List handleClick={props.setitem} data={props.storylist} dataCategory={props.getList}/>
-          }
-
-          {/* **** FOOTER COMPONENT **** */}
-          <Footer />
+          } {/* **** LIST COMPONENT **** */}
+          <Footer /> {/* **** FOOTER COMPONENT **** */}
         </>
     )
 }
 
 const mapStateToProps = state => {
-    return {
-        storylist: state.storylist
-    };
+  return {
+      storylist: state.storylist
   };
-  
-  const mapDispatchToProps = dispatch => {
-    return {
-      getList: (data) => dispatch(getStoryList(data)),
-      setitem: (data) => dispatch(setItem(data))
-    };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    getList: (data) => dispatch(getStoryList(data)),
+    setitem: (data) => dispatch(setItem(data))
   };
+};
 
 export default connect(
     mapStateToProps,
