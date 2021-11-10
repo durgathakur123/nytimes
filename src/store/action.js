@@ -1,11 +1,11 @@
 import {
-  classNameGET_TOPSTORY_LIST,
+  GET_TOPSTORY_LIST,
   SET_TOPSTORY_LIST
 } from "./constants";
 
 export function getDogList(payload) {
   return {
-    type: classNameGET_TOPSTORY_LIST,
+    type: GET_TOPSTORY_LIST,
     payload
   };
 }
