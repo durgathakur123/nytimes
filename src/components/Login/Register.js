@@ -8,7 +8,7 @@ export default class SignUp extends Component {
                     <div className={'logo mx-auto'}>
                         <img src={'logo.png'} className="w-100" alt="register" />
                     </div>
-                    <h6 className="text-center title">Register</h6>
+                    {/* <h6 className="text-center title">Register</h6> */}
                     <form>
                         <div className="form-group">
                             <input type="text" className={'form-control'} placeholder="First Name*" required />

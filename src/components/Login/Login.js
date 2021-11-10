@@ -8,7 +8,7 @@ class Login extends Component {
                     <div className={'logo mx-auto'}>
                         <img src={'logo.png'} className="w-100" alt="Login" />
                     </div>
-                    <h6 className="text-center title">Login</h6>
+                    {/* <h6 className="text-center title">Login</h6> */}
                     <form>
                         <div className="form-group">
                             <input type="email" className={'form-control'} placeholder="Email" required />
