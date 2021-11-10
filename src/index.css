@@ -234,3 +234,20 @@ footer {
   font-size: 0.8rem;
   color: #767575;
 }
+.searchDetail .searchField {
+  max-width: 100%;
+}
+.searchDetail .item {
+  padding: 15px 0;
+}
+
+.searchDetail .searchField {
+  height: auto;
+  font-size: large;
+}
+
+.searchDetail .search img {
+  height: 30px;
+  margin-left: -40px;
+  margin-top: 5px;
+}
