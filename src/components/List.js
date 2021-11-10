@@ -3,7 +3,6 @@ import NavBar from './Navbar';
 import Search from './Search';
 
 function List(props){
-    console.log(props)
     return(
         <>
             <div className={'container'}>

@@ -1,28 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from "react-redux";
-import List from '../../components/List'
+// import List from '../../components/List'
 import Header  from '../../components/Header';
-import Banner  from '../../components/Banner';
+// import Banner  from '../../components/Banner';
 import Footer  from '../../components/Footer';
-import { getStoryList, setItem } from "../../store/action";
+import ListDetail from '../../components/ListDetail';
+// import { getStoryList, setItem } from "../../store/action";
 
-function StoryList(props){
-    useEffect(()=>{
-        props.getList("world");
-    },[])
-    
+function Detail(props){
     return(
         <>
           {/* **** HEADER COMPONENT **** */}
           <Header />
 
           {/* **** BANNER COMPONENT **** */}
-          <Banner />
+          {/* <Banner /> */}
           
           {/* **** LIST COMPONENT **** */}
-          {props && props.storylist && 
+
+          <ListDetail data={props.getdetail}/>
+          {/* {props && props.storylist && 
             <List handleClick={props.setitem} data={props.storylist} dataCategory={props.getList}/>
-          }
+          } */}
 
           {/* **** FOOTER COMPONENT **** */}
           <Footer />
@@ -32,18 +31,17 @@ function StoryList(props){
 
 const mapStateToProps = state => {
     return {
-        storylist: state.storylist
+        getdetail: state.setitem
     };
   };
   
-  const mapDispatchToProps = dispatch => {
-    return {
-      getList: (data) => dispatch(getStoryList(data)),
-      setitem: (data) => dispatch(setItem(data))
-    };
-  };
+  // const mapDispatchToProps = dispatch => {
+  //   return {
+  //     getList: (data) => dispatch(getStoryList(data)),
+  //     setitem: (data) => dispatch(setItem(data))
+  //   };
+  // };
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(StoryList);
+    mapStateToProps
+)(Detail);

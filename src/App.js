@@ -9,6 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Detail from "./containers/Listing/Detail";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
 
       <Router>
         <Routes>
-            <Route exact path="/" element={<Listing />}/>
             <Route exact path="/Login" element={<Login />}/>
             <Route path="/register" element={<Register />}/>
+            <Route exact path="/" element={<Listing />}/>
+            <Route exact path="/Detail" element={<Detail />}/>
         </Routes>
       </Router>
       </div> 

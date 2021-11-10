@@ -1,9 +1,10 @@
 import React from 'react'
 
-function ListDetail() {
+function ListDetail(props) {
+    console.log(props.data);
     return (
         <div>
-            List Detail
+            List Detail {props.data}
         </div>
     )
 }

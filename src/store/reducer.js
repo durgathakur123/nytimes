@@ -1,7 +1,8 @@
-import { SET_TOPSTORY_LIST } from "./constants";
+import { SET_TOPSTORY_LIST, SET_ITEM } from "./constants";
 
 const initialState = {
-  storylist: {}
+  storylist: {},
+  setitem: {}
 };
 
 const reducer = (state = initialState, action) => {
@@ -10,6 +11,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         storylist: action.payload
+      };
+    case SET_ITEM:
+      return {
+        ...state,
+        setitem: action.payload
       };
   }
   return state;
