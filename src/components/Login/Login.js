@@ -11,7 +11,6 @@ class Login extends Component {
                         <label>Email</label>
                         <input type="email" className="form-control" required />
                     </div>
-
                     <div className="form-group">
                         <label>Password</label>
                         <input type="password" className="form-control" required/>

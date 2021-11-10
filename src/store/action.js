@@ -11,12 +11,13 @@ export function getStoryList(payload) {
   };
 }
 
-export function setTopStoriesListScience(payload) {
+export function setStoryList(payload) {
   return {
     type: SET_TOPSTORY_LIST,
     payload
   };
 }
+
 export function setItem(payload) {
   return {
     type: SET_ITEM,

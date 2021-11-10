@@ -9,8 +9,8 @@ function List(props){
             <div className={'listTopWrapper w-75 mx-auto'}>
                 <h5 className={'storyTitle text-center mt-4'}>Top Stories Highlightes</h5>
                 <div className={'d-flex align-items-center justify-content-between '}>
-                <Search />
-                <NavBar dataCategory={props.dataCategory}/> 
+                    <Search />
+                    <NavBar dataCategory={props.dataCategory}/> 
                 </div>
                 </div>
                 <div className={'listWrapper w-75 mx-auto'}>
@@ -18,7 +18,7 @@ function List(props){
                         Object.values(props.data).map(item=>{
                             return (
                             <React.Fragment> 
-                                { item.title && 
+                                {item.title && 
                                     <div className={'item row d-flex align-items-center mx-auto'} onClick={()=>props.handleClick(item)}>
                                     <div className={'content col-md-6'}>
                                         <h6 className="title">{item.title} </h6>
