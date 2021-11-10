@@ -6,20 +6,14 @@ function Header() {
         <>
         <header className={'headerWrapper'}>
             <div className={'container'}>
-                <img src={'PetFinerLogo.PNG'} alt="logo" />
-                <div>
-                    <h1 className={'mainHeading'}>Welcome to Our World!</h1>
-                    <div className={'subHeading'}>Finding Your New Best Friend? 
-                    Get Personalized pet Matches Here...</div>
+                <div className="toggleMenu">
+                    <img src={'menu.png'} />
                 </div>
-                <div className={"headGifWrapper"}>
-                    <img src={'pup3.GIF'} alt="PetHere" />
+                <div className={'logo'}>
+                    <img src={'logo.PNG'} alt="logo" />
                 </div>
+                <a className="link">Login</a>
             </div>
-
-             {/*  ------NavBar Component ---  */}
-            <NavBar />  
-
         </header>
         </>
     )

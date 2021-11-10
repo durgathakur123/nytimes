@@ -1,5 +1,5 @@
 import {
-  SET_DOG_LIST,
+  SET_TOPSTORIE_LIST_SCIENCE,
   SET_DOG_BREED_BY_NAME_IMAGE_LIST
 } from "./constants";
 
@@ -10,7 +10,7 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_DOG_LIST:
+    case SET_TOPSTORIE_LIST_SCIENCE:
       return {
         ...state,
         doglist: action.payload

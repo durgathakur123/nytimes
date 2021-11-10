@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from "react-redux";
 import List from '../../components/List'
-import Image from '../../components/Image'
 import Header  from '../../components/Header';
 import Banner  from '../../components/Banner';
 import Footer  from '../../components/Footer';
 import { getDogList, getDogBreedByName } from "../../store/action";
 
-
 function DogList(props){
-  
     useEffect(()=>{
         props.getList();
     },[])
@@ -19,10 +16,6 @@ function DogList(props){
     function handleBreedClick(val) {
         setstate(!state);
         props.getDogBreed(val)
-    }
-
-    function closePopup() {
-      setstate(!state);
     }
 
     return(
@@ -36,11 +29,6 @@ function DogList(props){
           {/* **** LIST COMPONENT **** */}
           {props && props.doglist && 
             <List handleClick={handleBreedClick} data={props.doglist} />
-          }
-
-          {/* **** IMAGE COMPONENT **** */}
-          {state && props && props.dogimagelist &&
-            <Image images={props.dogimagelist} handleClose={closePopup}/>
           }
 
           {/* **** FOOTER COMPONENT **** */}

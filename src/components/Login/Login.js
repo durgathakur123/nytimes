@@ -6,7 +6,6 @@ class Login extends Component {
             <div className="col-md-3 col-sm-6 mx-auto formWrapper">
                 <img src={'login.svg'} className="w-100" alt="Login" />
                 <h3 className="text-center">Login</h3>
-
                 <form>
                     <div className="form-group">
                         <label>Email</label>
@@ -23,7 +22,6 @@ class Login extends Component {
                     <div className="right">
                     <button type="submit" className="btn btn-primary btn-md">Log in</button>
                     </div>
-                    
                 </form>
             </div>
         );

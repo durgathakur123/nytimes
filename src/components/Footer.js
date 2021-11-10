@@ -5,7 +5,7 @@ function Footer() {
         <>
         <footer>
             <div className={'container'}>
-                <span>© 2021 Pet Finder. All Rights Reserved</span>
+                <span>© 2021 The New York Times. All Rights Reserved</span>
             </div>
         </footer>
         </>

@@ -1,18 +1,18 @@
 import React from "react";
 
 function NavBar() {
+    const handleCategoryClick =(e) => {
+        const currCategory = e.target.value;
+        console.log(currCategory)
+    }
     return(
         <>
             <div className="navBar">
-                <div className="container">
-                    <div className="quickConnect">Quick Connect Here: 
-                    <img src={'whatsapp.png'} alt={'Quick Connect'}/>
-                    </div>
-                    <div className="toggleMenu">
-                        <img className={'w-25'} src={'like.png'} alt="favrorite" />
-                        <img src={'menu.png'} />
-                    </div>
-                </div>
+                <ul className={'menu'}>
+                <li>Categories: </li>
+                    <li><button className={'active'} onClick={handleCategoryClick} value={'science'}>Science</button></li>
+                    <li><button onClick={handleCategoryClick} value={'world'}>World</button></li>
+                </ul>
             </div>
         </>
     )

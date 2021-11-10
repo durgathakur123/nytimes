@@ -5,7 +5,7 @@ import Register from "./components/Login/Register";
 import DogList from "./containers/DogList/DogList";
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link
 } from "react-router-dom";
@@ -14,14 +14,14 @@ function App() {
   return (
     <>
       <div className={'container-fluid p-0'}>
-      {/* <Router>
-        <Switch>
-            <Route exact path="/" component={Login}/>
-        </Switch>
-      </Router> */}
-      <Login />
-      <Register />
-      <DogList />
+
+      <Router>
+        <Routes>
+            <Route exact path="/" element={<DogList />}/>
+            <Route exact path="/Login" element={<Login />}/>
+            <Route path="/register" element={<Register />}/>
+        </Routes>
+      </Router>
       </div> 
     </>
   );

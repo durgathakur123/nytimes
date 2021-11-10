@@ -1,8 +1,7 @@
 import { takeEvery, put, call, takeLastest } from "redux-saga/effects";
 import axios from "axios";
 import {
-  setDogList,
-  setDogBreedByNameImageList
+  setTopStoriesListScience
 } from "../store/action";
 
 async function getData(url) {
@@ -20,17 +19,12 @@ async function getData(url) {
   } catch (err) {}
 }
 
-function* fetchDogList(action) {
-  const res = yield call(getData, 'https://dog.ceo/api/breeds/list/all');
-  yield put(setDogList(res.data.message));
-}
-
-function* fetchDogBreedByName(action) {
-  const res = yield call(getData, `https://dog.ceo/api/breed/${action.payload}/images`);
- yield put(setDogBreedByNameImageList(res.data.message));
+function* fetchTopStoriesListScience(action) {
+  const res = yield call(getData, 'https://api.nytimes.com/svc/topstories/v2/science.json?api-key=gJGeyC4DCijKHEHyC58UVpC485r7YSzz');
+  console.log(res.data.results)
+  yield put(setTopStoriesListScience(res.data.results));
 }
 
 export function* mySaga() {
-  yield takeEvery("GET_DOG_LIST", fetchDogList);
-  yield takeEvery("GET_DOG_BREED_BY_NAME", fetchDogBreedByName);
+  yield takeEvery("GET_TOPSTORIE_LIST_SCIENCE", fetchTopStoriesListScience);
 }
