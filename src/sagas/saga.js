@@ -27,5 +27,5 @@ function* fetchTopStoriesListScience(action) {
 }
 
 export function* mySaga() {
-  yield takeEvery("GET_TOPSTORIE_LIST_SCIENCE", fetchTopStoriesListScience);
+  yield takeEvery("classNameGET_TOPSTORY_LIST", fetchTopStoriesListScience);
 }

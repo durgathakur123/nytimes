@@ -4,20 +4,13 @@ import List from '../../components/List'
 import Header  from '../../components/Header';
 import Banner  from '../../components/Banner';
 import Footer  from '../../components/Footer';
-import { getDogList, getDogBreedByName } from "../../store/action";
+import { getDogList } from "../../store/action";
 
 function DogList(props){
     useEffect(()=>{
         props.getList("world");
     },[])
-
-    const [state, setstate] = useState(false);
-
-    function handleBreedClick(val) {
-        setstate(!state);
-        props.getDogBreed(val)
-    }
-
+    
     return(
         <>
           {/* **** HEADER COMPONENT **** */}
@@ -28,7 +21,7 @@ function DogList(props){
           
           {/* **** LIST COMPONENT **** */}
           {props && props.doglist && 
-            <List handleClick={handleBreedClick} data={props.doglist} dataCategory={props.getList}/>
+            <List data={props.doglist} dataCategory={props.getList}/>
           }
 
           {/* **** FOOTER COMPONENT **** */}
@@ -46,8 +39,7 @@ const mapStateToProps = state => {
   
   const mapDispatchToProps = dispatch => {
     return {
-      getList: (data) => dispatch(getDogList(data)),
-      getDogBreed: (payload) => dispatch(getDogBreedByName(payload)),
+      getList: (data) => dispatch(getDogList(data))
     };
   };
 

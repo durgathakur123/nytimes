@@ -1,31 +1,17 @@
 import {
-  GET_TOPSTORIE_LIST_SCIENCE,
-  SET_TOPSTORIE_LIST_SCIENCE,
-  GET_DOG_BREED_BY_NAME,
-  SET_DOG_BREED_BY_NAME_IMAGE_LIST
+  classNameGET_TOPSTORY_LIST,
+  SET_TOPSTORY_LIST
 } from "./constants";
 
 export function getDogList(payload) {
   return {
-    type: GET_TOPSTORIE_LIST_SCIENCE,
+    type: classNameGET_TOPSTORY_LIST,
     payload
   };
 }
 export function setTopStoriesListScience(payload) {
   return {
-    type: SET_TOPSTORIE_LIST_SCIENCE,
-    payload
-  };
-}
-export function getDogBreedByName(payload) {
-  return {
-    type: GET_DOG_BREED_BY_NAME,
-    payload
-  };
-}
-export function setDogBreedByNameImageList(payload) {
-  return {
-    type: SET_DOG_BREED_BY_NAME_IMAGE_LIST,
+    type: SET_TOPSTORY_LIST,
     payload
   };
 }
