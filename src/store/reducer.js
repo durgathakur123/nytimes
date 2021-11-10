@@ -1,8 +1,7 @@
 import { SET_TOPSTORY_LIST } from "./constants";
 
 const initialState = {
-  doglist: {},
-  dogimagelist:{}
+  doglist: {}
 };
 
 const reducer = (state = initialState, action) => {

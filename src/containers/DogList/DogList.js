@@ -32,8 +32,7 @@ function DogList(props){
 
 const mapStateToProps = state => {
     return {
-        doglist: state.doglist,
-        dogimagelist:state.dogimagelist
+        doglist: state.doglist
     };
   };
   
