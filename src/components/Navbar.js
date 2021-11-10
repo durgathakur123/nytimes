@@ -1,15 +1,15 @@
 import React from "react";
 
-function NavBar() {
+function NavBar(props) {
     const handleCategoryClick =(e) => {
         const currCategory = e.target.value;
-        console.log(currCategory)
+        props.dataCategory(currCategory)
     }
     return(
         <>
             <div className="navBar">
-                <ul className={'menu'}>
-                <li>Categories: </li>
+                <ul className={'menu categoryBtn'}>
+                    <li>Categories: </li>   
                     <li><button className={'active'} onClick={handleCategoryClick} value={'science'}>Science</button></li>
                     <li><button onClick={handleCategoryClick} value={'world'}>World</button></li>
                 </ul>

@@ -20,7 +20,8 @@ async function getData(url) {
 }
 
 function* fetchTopStoriesListScience(action) {
-  const res = yield call(getData, 'https://api.nytimes.com/svc/topstories/v2/science.json?api-key=gJGeyC4DCijKHEHyC58UVpC485r7YSzz');
+  console.log(action)
+  const res = yield call(getData, `https://api.nytimes.com/svc/topstories/v2/${action.payload}.json?api-key=gJGeyC4DCijKHEHyC58UVpC485r7YSzz`);
   console.log(res.data.results)
   yield put(setTopStoriesListScience(res.data.results));
 }

@@ -8,7 +8,7 @@ import { getDogList, getDogBreedByName } from "../../store/action";
 
 function DogList(props){
     useEffect(()=>{
-        props.getList();
+        props.getList("world");
     },[])
 
     const [state, setstate] = useState(false);
@@ -28,7 +28,7 @@ function DogList(props){
           
           {/* **** LIST COMPONENT **** */}
           {props && props.doglist && 
-            <List handleClick={handleBreedClick} data={props.doglist} />
+            <List handleClick={handleBreedClick} data={props.doglist} dataCategory={props.getList}/>
           }
 
           {/* **** FOOTER COMPONENT **** */}
@@ -46,7 +46,7 @@ const mapStateToProps = state => {
   
   const mapDispatchToProps = dispatch => {
     return {
-      getList: () => dispatch(getDogList()),
+      getList: (data) => dispatch(getDogList(data)),
       getDogBreed: (payload) => dispatch(getDogBreedByName(payload)),
     };
   };

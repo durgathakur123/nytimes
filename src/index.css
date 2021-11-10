@@ -52,7 +52,7 @@ ul.menu {
 }
 ul.menu li {
   display: inline-block;
-  padding: 5px;
+  padding: 5px 0 5px 5px;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -199,4 +199,38 @@ footer {
 .imgWrapper img {
   width: 100%;
   border: 1px solid #000;
+}
+.searchField {
+  height: 30px;
+      border-radius: 0;
+      font-size: 0.8rem;
+      cursor: pointer;
+      padding-right: 30px;
+      max-width: 200px;
+}
+.searchField:focus {
+  outline: 0;
+  box-shadow: none;
+  border-color: #eee;
+}
+
+.search img {
+  width: auto;
+  height: 23px;
+  margin-left: -26px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.categoryBtn button {
+  border: 2px solid #444;
+}
+.categoryBtn button.active {
+  background: #444;
+  color: #fff;
+}
+
+.font-sm {
+  font-size: 0.8rem;
+  color: #767575;
 }

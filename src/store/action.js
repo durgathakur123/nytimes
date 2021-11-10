@@ -5,9 +5,10 @@ import {
   SET_DOG_BREED_BY_NAME_IMAGE_LIST
 } from "./constants";
 
-export function getDogList() {
+export function getDogList(payload) {
   return {
     type: GET_TOPSTORIE_LIST_SCIENCE,
+    payload
   };
 }
 export function setTopStoriesListScience(payload) {
