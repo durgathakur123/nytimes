@@ -23,7 +23,9 @@ function App() {
             <Route path="/register" element={<Register />}/>
             <Route exact path="/" element={<Listing />}/>
             <Route exact path="/Detail" element={<Detail />}/>
-            <Route exact path="/SearchDetail" element={<SearchDetail />}/>
+            <Route exact path="/searchdetail" element={<SearchDetail />}/>
+            {/* <Route exact path="/searchdetail/?search=:search" element={<SearchDetail />}/> */}
+            {/* <Route exact path="/searchdetail/:search" element={<SearchDetail />}/> */}
         </Routes>
       </Router>
       </div> 

@@ -1,5 +1,7 @@
 import React from "react";
+import { Router } from "react-router";
 import NavBar from "./Navbar";
+import {Link} from 'react-router-dom';
 
 function Header() {
     return(
@@ -12,7 +14,9 @@ function Header() {
                 <div className={'logo'}>
                     <img src={'logo.PNG'} alt="logo" />
                 </div>
-                <a className="link">Login</a>
+                <div className={'text-black'}>
+                <Link to='/Login'>Login</Link>
+                </div>
             </div>
         </header>
         </>

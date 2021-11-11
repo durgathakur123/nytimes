@@ -4,16 +4,17 @@ function ListDetail(props) {
     console.log(props.data);
     return (
         <div className={'detailWrapper container'}>
+       
             <div className={'my-4 w-75 mx-auto bg-white p-5'}>
                 <div className={'content mx-auto'}>
-                    <h3 className={'title'}>Sign Up for the Science Times Newsletter</h3>
+                    <h3 className={'title'}> {props.data.title} </h3>
                     <p className={'font-sm'}>Last Updated: 2021-11-10</p>
                     <p className={'para'}>
-                        Every week, we’ll bring you stories that capture the wonders of the human body, nature and the cosmos.</p>
+                    {props.data.abstract} </p>
                     <img src={'social.PNG'} />
                     <hr />
                     <div className={'imgWrapper mx-auto'}>
-                        <img src={"article.jpg"} />
+                        <img src={props.data.multimedia[0].url} />
                     </div>
                 </div>
                 <hr/>
