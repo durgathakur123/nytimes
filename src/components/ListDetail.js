@@ -1,4 +1,5 @@
 import React from 'react'
+import Comment from './Comment'
 
 function ListDetail(props) {
     console.log(props.data);
@@ -17,10 +18,7 @@ function ListDetail(props) {
                         <img src={props.data.multimedia[0].url} />
                     </div>
                 </div>
-                <hr/>
-                <div className={'commentWrapper'}>
-                    <h6 className={'title'}>Comment</h6>
-                </div>
+               <Comment />
             </div>
         </div>
     )
