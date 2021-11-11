@@ -26,11 +26,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm install`
+### `$ npm install`
 
 To install all required dependencies for project.
 
-### `npm start`
+### `$ npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -38,15 +38,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - The page will reload if you make edits.<br />
 - You will also see any lint errors in the console.
 
-### `npm add react-router-dom`
+### `$ npm add react-router-dom`
  
 Install react-router-dom to perform routing in the app.
 
-### `npm install --save redux`
+### `$ npm install --save redux`
 
 Install Redux to perform structure flow in the app, which helps to maintain the application state.
 
-### `npm install axios`
+### `$ npm install axios`
 
 Install the Axios library to make HTTP requests from node.js.
 
@@ -57,12 +57,12 @@ Install the Axios library to make HTTP requests from node.js.
 Local Server: https://github.com/techiediaries/fake-api-jwt-json-server 
 Integrated to run the api
 
-### `npm install`
+### `$ npm install`
 
 To install the project on local
 Open [http://localhost:8000] to view in the browser or to run localhost on 8000 port.
 
-### `npm run start-auth`
+### `$ npm run start-auth`
 
 Runs the command 
 Helps to genrate auth tokens for:
