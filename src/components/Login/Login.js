@@ -16,12 +16,6 @@ class Login extends Component {
         this.setState({
             [e.target.id]:e.target.value
         })
-        // this.setState({
-        //     email: e.target.email
-        // })
-        // this.setState({
-        //     password: e.target.value
-        // })
     } 
     handleSubmit = (e) => {
         e.preventDefault();
