@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Node JS
-    - help to start & excute your react project at port 3000
+    - Help to start & excute your react project at port 3000
     - run time environment where you can execute your javascript code
 
     - step:1 npm install -g create-react-app
