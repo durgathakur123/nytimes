@@ -34,9 +34,20 @@ Register: [http://localhost:8000/auth/Register]
 you can Login & Register to hit a POST request
 with the following data below:
 
-### `{ "email": "nilson@email.com", "password":"nilson" }`
+```json
+{
+  "email": "nilson@email.com",
+  "password":"nilson"
+}
+```
 
 --------------------------------
+
+## Run Test
+
+### `npm run test`
+
+To run the test case, you can run the following command
 
 ## Unit Testing With Jest
 
@@ -48,11 +59,13 @@ install Jest using the following command below
 After Installing Jest,
 added following lines in package.json file -
 
+```json
 {
  "scripts": {
   "test": "jest",
   "test:watch": "npm test -- --watch"
  }
 }
+```
 
 Now, we can easily perform Unit Testing with JEST
