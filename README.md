@@ -30,3 +30,8 @@ Runs the command
 Helps to genrate auth tokens for:
 Login: [http://localhost:8000/auth/login]
 Register: [http://localhost:8000/auth/Register]
+
+you can Login & Register to hit a POST request
+with the following data below:
+
+### `{ "email": "nilson@email.com", "password":"nilson" }`
