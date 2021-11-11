@@ -1,4 +1,6 @@
 import React from "react";
+import { Router } from "react-router";
+import NavBar from "./Navbar";
 import {Link} from 'react-router-dom';
 
 function Header(props) {
