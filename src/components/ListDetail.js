@@ -5,11 +5,10 @@ function ListDetail(props) {
     console.log(props.data);
     return (
         <div className={'detailWrapper container'}>
-       
             <div className={'my-4 w-75 mx-auto bg-white p-5'}>
                 <div className={'content mx-auto'}>
                     <h3 className={'title'}> {props.data.title} </h3>
-                    <p className={'font-sm'}>Last Updated: 2021-11-10</p>
+                    <p className={'font-sm'}>{props.data.last_updated}</p>
                     <p className={'para'}>
                     {props.data.abstract} </p>
                     <img src={'social.PNG'} />

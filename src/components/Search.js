@@ -12,14 +12,15 @@ function Search() {
     }
 
     return (
-        <div>
-            <form className={'searchWrap'}>
-                <div className="form-group search d-flex">
-                    <input type="text" className={ 'form-control searchField' } value={state} placeholder={'Search'} onChange={handleSearch} />
-                    <img src={'search.png'}/>
-                </div>
-            </form>
-        </div>
+    <div>
+        <form className={'searchWrap'}>
+            <div className="form-group search d-flex">
+                <input type="text" className={ 'form-control searchField' } value={state} 
+                placeholder={'Search'} onChange={handleSearch} />
+                <img src={'search.png'}/>
+            </div>
+        </form>
+    </div>
     )
 }
 

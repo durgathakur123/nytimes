@@ -4,12 +4,6 @@ import { login, signup } from "../../store/action";
 import Register from '../../components/Login/Register';
 
 function Signup(props) { 
-    // useEffect(()=>{
-    //     if(props.isLogin){
-    //      return <Link to="/" />
-    //     }
-    // },[props.isLogin])
-    
     if(props.isLogin){
         window.location.href = '/';
     }

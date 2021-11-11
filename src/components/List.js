@@ -24,7 +24,7 @@ function List(props){
                                 <div className={'item row d-flex align-items-center mx-auto'} onClick={()=>props.handleClick(item)}>
                                 <div className={'content col-md-6'}>
                                     <h6 className="title">{item.title} </h6>
-                                    <p className={'font-sm'}>Last Updated: 11-11-2021</p>
+                                    <p className={'font-sm'}>Last Updated:{item.last_updated}</p>
                                     <p className={'para'}>
                                         {item.abstract}
                                     </p></div>

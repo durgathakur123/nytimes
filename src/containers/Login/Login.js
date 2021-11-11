@@ -5,11 +5,6 @@ import Login from '../../components/Login/Login';
 import { Link } from 'react-router-dom';
 
 function StoryList(props) { 
-    // useEffect(()=>{
-    //     if(props.isLogin){
-    //      return <Link to="/" />
-    //     }
-    // },[props.isLogin])
     
     if(props.isLogin){
         window.location.href = '/';

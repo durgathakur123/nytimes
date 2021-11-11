@@ -29,16 +29,7 @@ export default class SignUp extends Component {
                     <div className={'logo mx-auto'}>
                         <img src={'logo.png'} className="w-100" alt="register" />
                     </div>
-                    {/* <h6 className="text-center title">Register</h6> */}
                     <form onSubmit={this.handleSubmit}>
-                        {/* <div className="form-group">
-                            <input type="text" className={'form-control'} placeholder="First Name*" required />
-                        </div>
-
-                        <div className="form-group">
-                            <input type="text" className={'form-control'} placeholder="Last Name" />
-                        </div> */}
-
                         <div className="form-group">
                             <input type="email"
                              id="email"
@@ -60,10 +51,8 @@ export default class SignUp extends Component {
                         <p className="mb-1 font-sm">
                             Already registered? <Link to='/Login'>Login here</Link>
                         </p>
-
                         <div className="form-group right">
-
-                        <button type="submit" className="btn btn-dark btn-sm">Register</button>
+                            <button type="submit" className="btn btn-dark btn-sm">Register</button>
                         </div>
                     </form>
                 </div>
