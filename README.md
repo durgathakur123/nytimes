@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Installation
 
 In the project directory, you can run:
 
@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ----------------------------------------------
 
-Login & Registration
+## Login & Registration
 
 Local Server: https://github.com/techiediaries/fake-api-jwt-json-server 
 Integrated to run the api
@@ -35,3 +35,24 @@ you can Login & Register to hit a POST request
 with the following data below:
 
 ### `{ "email": "nilson@email.com", "password":"nilson" }`
+
+--------------------------------
+
+## Unit Testing With Jest
+
+For the Unit Testing
+install Jest using the following command below
+
+### `$ npm install -save-dev jest`
+
+After Installing Jest,
+added following lines in package.json file -
+
+{
+ "scripts": {
+  "test": "jest",
+  "test:watch": "npm test -- --watch"
+ }
+}
+
+Now, we can easily perform Unit Testing with JEST
