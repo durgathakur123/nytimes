@@ -47,7 +47,7 @@ class Login extends Component {
                             placeholder="Password" 
                             onChange={this.handleChange}  required/>
                         </div>
-                        <p className="mb-1 font-sm">Not Register?
+                        <p className="mb-1 font-sm">Not Registered?
                             <Link to='/Register'> Click Here</Link>
                         </p>
                         <div className="right">
