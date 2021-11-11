@@ -1,5 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Node JS
+    - help to start & excute your react project at port 3000
+    - run time environment where you can execute your javascript code
+
+    - step:1 npm install -g create-react-app
+    - step:2 create-react-app my-app
+                                OR
+    - step:1 npx create-react-app my-app
+    - step to start/excute the project below
+    - command: npm start 
+
+----------------------------------
+
+## npm & npx
+    -Both are tools for setup react project
+
+## npm v/s npx (Quick Difference)
+    -npm * node package manager - depandency required to install globaly to setup project
+    -npx * node package runner - Helps to setup/execute react project directly without installing any depandency
+
+-----------------------------------
+
 ## Installation
 
 In the project directory, you can run:
