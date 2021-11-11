@@ -9,8 +9,13 @@ class Login extends Component {
                 password:''
             }       
     }
-   
+   componentDidUpdate(){
+       return 
+   }
     handleChange = (e) => {
+        this.setState({
+            [e.target.id]:e.target.value
+        })
         // this.setState({
         //     email: e.target.email
         // })
@@ -21,6 +26,9 @@ class Login extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         console.log('submit');
+        let userData = {email:this.state.email,
+                password:this.state.password}
+        this.props.handleLogin(userData);
     }
 
     render() {
@@ -36,18 +44,20 @@ class Login extends Component {
                             className={'form-control'} 
                             placeholder="Email" 
                             name="email" 
-                            // value={this.state.email} 
+                            id="email"
+                            value={this.state.email} 
                             onChange={this.handleChange} required />
                         </div>
                         <div className="form-group">
                             <input type="password" 
                             name="password" 
-                            // value={this.state.password} 
+                            id="password"
+                            value={this.state.password} 
                             className="form-control" 
                             placeholder="Password" 
                             onChange={this.handleChange}  required/>
                         </div>
-                        <p className="mb-1 font-sm">Not Registered?
+                        <p className="mb-1 font-sm">Not Register?
                             <Link to='/Register'> Click Here</Link>
                         </p>
                         <div className="right">

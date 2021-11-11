@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
-import Login from "./components/Login/Login";
-import Register from "./components/Login/Register";
+import Login from "./containers/Login/Login";
+import Register from "./containers/Signup/Signup";
 import Listing from "./containers/Listing/Listing";
 import {
   BrowserRouter as Router,

@@ -1,9 +1,7 @@
 import React from "react";
-import { Router } from "react-router";
-import NavBar from "./Navbar";
 import {Link} from 'react-router-dom';
 
-function Header() {
+function Header(props) {
     return(
         <>
         <header className={'headerWrapper'}>
@@ -15,7 +13,10 @@ function Header() {
                     <img src={'logo.PNG'} alt="logo" />
                 </div>
                 <div className={'text-black'}>
-                <Link to='/Login'>Login</Link>
+                {!props.isLogin && 
+                <Link to='/Login'>Login</Link>}
+                {props.isLogin &&
+                <button onClick={props.logout}>Logout</button>}
                 </div>
             </div>
         </header>

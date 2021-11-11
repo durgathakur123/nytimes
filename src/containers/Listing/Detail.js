@@ -3,12 +3,12 @@ import { connect } from "react-redux";
 import Header  from '../../components/Header';
 import Footer  from '../../components/Footer';
 import ListDetail from '../../components/ListDetail';
-
+import {  logout} from "../../store/action";
 function Detail(props){
     return(
         <>
           {/* **** HEADER COMPONENT **** */}
-          <Header />
+          <Header  isLogin={props.isLogin} isLogout={props.isLogout} logout={props.logout}/>
           
           {/* **** LIST COMPONENT **** */}
 
@@ -22,10 +22,17 @@ function Detail(props){
 
 const mapStateToProps = state => {
     return {
-        getdetail: state.setitem
+        getdetail: state.setitem,
+        isLogin: state.isLogin,
+        isLogout: state.isLogout
     };
   };
-
+  const mapDispatchToProps = dispatch => {
+    return {
+      logout:() => dispatch(logout())
+    };
+  };
+  
 export default connect(
-    mapStateToProps
+    mapStateToProps,mapDispatchToProps
 )(Detail);
