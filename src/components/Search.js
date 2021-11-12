@@ -6,8 +6,10 @@ function Search() {
 
     function handleSearch(e) {
         setstate(e.target.value)
+        console.log(`${e.charCode} ${state}`)
+        
         if(e.charCode = 13) {
-            return <Link to={`/searchdetail/?search=${state}`} ></Link>
+            return <Link to={`/searchdetail/:${state}`}></Link>
         }
     }
 

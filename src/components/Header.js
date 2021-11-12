@@ -12,7 +12,7 @@ function Header(props) {
                     <img src={'menu.png'} />
                 </div>
                 <div className={'logo'}>
-                    <img src={'logo.PNG'} alt="logo" />
+                <Link to='/'><img src={'logo.PNG'} alt="logo" /></Link>
                 </div>
                 <div className={'text-black'}>
                 {!props.isLogin && 

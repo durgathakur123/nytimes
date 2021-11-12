@@ -6,7 +6,7 @@ import  {Link} from 'react-router-dom';
 function List(props){
     return(
         <>
-            <div className={'container'}>
+        <div className={'container'}>
             <div className={'listTopWrapper w-75 mx-auto'}>
                 <h5 className={'storyTitle text-center mt-4'}>Top Stories Highlights</h5>
                 <div className={'d-flex align-items-center justify-content-between '}>
@@ -24,7 +24,7 @@ function List(props){
                                 <div className={'item row d-flex align-items-center mx-auto'} onClick={()=>props.handleClick(item)}>
                                 <div className={'content col-md-6'}>
                                     <h6 className="title">{item.title} </h6>
-                                    <p className={'font-sm'}>Last Updated:{item.last_updated}</p>
+                                    <p className={'font-sm'}>Last Updated: {item.updated_date}</p>
                                     <p className={'para'}>
                                         {item.abstract}
                                     </p></div>

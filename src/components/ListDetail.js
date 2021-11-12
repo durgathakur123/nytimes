@@ -8,7 +8,7 @@ function ListDetail(props) {
             <div className={'my-4 w-75 mx-auto bg-white p-5'}>
                 <div className={'content mx-auto'}>
                     <h3 className={'title'}> {props.data.title} </h3>
-                    <p className={'font-sm'}>{props.data.last_updated}</p>
+                    <p className={'font-sm'}>Last Updated: {Date(props.data.updated_date).toString()}</p>
                     <p className={'para'}>
                     {props.data.abstract} </p>
                     <img src={'social.PNG'} />
